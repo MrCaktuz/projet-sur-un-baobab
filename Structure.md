@@ -16,20 +16,12 @@
 	i. Qui sommes-nous
 	i. Photos
 4. Courts-métrages
-	i. [Projet 1]
+	i. [Projets]
 		1. Film
 		2. Projet
 		3. Making of
 		4. Fiche technique
-		5. Diffusion
-		6. Presse
-	i. [Projet 2]
-		1. Film
-		2. Projet
-		3. Making of
-		4. Fiche technique
-		5. Diffusion
-		6. Presse
+	i. Diffusion
 5. Anime toi-même
 	i. Crée ton mini-studio
 	i. Dessine ton histoire
