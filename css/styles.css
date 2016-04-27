@@ -1,0 +1,411 @@
+/* Curriculom Vitae
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+/* Sur Un Baobab
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by Mucht
+ */
+/* Sur Un Baobab
+ *
+ * /sass/settings/_colors.scss - Global sizes variables
+ *
+ * coded by Mucht
+ */
+/* Sur Un Baobab
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Mucht
+ */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-regular-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-italic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-semibold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GoodDog';
+  src: url("../assets/fonts/GoodDog/GoodDog.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Sur Un Baobab
+ *
+ * /sass/settings/_sizes.scss - Global sizes variables
+ *
+ * coded by Mucht
+ * started at 21/04/2016
+ */
+/* Sur Un Baobab
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Mucht
+ */
+.hidden {
+  display: none; }
+
+.clear::after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/* Curriculom Vitae
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Curriculom Vitae
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Sur Un Baobab
+  *
+  * /sass/base/_root.scss - Base styles for root element
+  *
+  * coded by Mucht
+  */
+html {
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* Sun Un Baobab
+ *
+ * /sass/objects/_global.scss - Non Esthetic style for globals elements
+ *
+ * coded by Mucht!
+ */
+.wrap {
+  width: 940px;
+  margin: 0 auto; }
+
+/* Sun Un Baobab
+ *
+ * /sass/objects/_mainNav.scss - Non Esthetic style for navigation
+ *
+ * coded by Mucht!
+ */
+.mainNav {
+  min-height: 55px; }
+  .mainNav__list {
+    margin-left: 10.5263157895%; }
+  .mainNav__elem {
+    margin-right: 3.3333333333%; }
+
+/* Sun Un Baobab
+ *
+ * /sass/objects/_header.scss - Non Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+.header {
+  height: 300px; }
+  .header__logo {
+    margin: 50px 0 0 10.5263157895%; }
+
+/* Sun Un Baobab
+ *
+ * /sass/objects/_sections.scss - Non Esthetic style for sections
+ *
+ * coded by Mucht!
+ */
+.sections__title {
+  margin-bottom: 30px; }
+
+.sections__subSections {
+  width: 456px;
+  margin-bottom: 50px; }
+  .sections__subSections--photo {
+    width: 456px; }
+
+.sections__subSections:nth-child(3) {
+  margin-left: 28px; }
+
+.sections--articles::before {
+  height: 15px; }
+
+/* Sun Un Baobab
+ *
+ * /sass/objects/_footer.scss - Non Esthetic style for footer
+ *
+ * coded by Mucht!
+ */
+/* Sur Un Baobab
+ *
+ * /sass/components/_global.scss - Esthetic style for global elements
+ *
+ * coded by Mucht!
+ */
+a {
+  text-decoration: none;
+  color: #ffa100; }
+
+a.button {
+  font-family: "GoodDog";
+  color: #FFF;
+  padding: 0.2em 0.5em;
+  background-color: #659c48;
+  border-radius: 0.3em; }
+
+/* Sur Un Baobab
+ *
+ * /sass/components/_mainNav.scss - Esthetic style for navigation
+ *
+ * coded by Mucht!
+ */
+.mainNav {
+  background-color: #ffa100; }
+  .mainNav__list--dropdown {
+    display: none; }
+  .mainNav__elem {
+    display: inline-block;
+    font-size: 24px;
+    font-family: "GoodDog";
+    padding-top: 0.625em; }
+    .mainNav__elem--link {
+      color: #324247; }
+    .mainNav__elem--active::after {
+      content: " ";
+      display: block;
+      width: 50px;
+      margin: 2px auto;
+      height: 5px;
+      background-image: url(../assets/img/active.png);
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .mainNav__elem--donation {
+      float: right;
+      margin-right: 100%/30; }
+
+/* Sur Un Baobab
+ *
+ * /sass/components/_header.scss - Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+.header {
+  background-image: url(../assets/img/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .header__title {
+    background-image: url(../assets/img/menuJaggedEdge.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+/* Sur Un Baobab
+ *
+ * /sass/components/_sections.scss - Esthetic style for sections
+ *
+ * coded by Mucht!
+ */
+.sections {
+  padding-bottom: 50px;
+  text-align: center; }
+  .sections__title {
+    padding-top: 25px;
+    font-family: "GoodDog";
+    font-size: 2.75625em;
+    text-align: center; }
+  .sections__subSections {
+    display: block;
+    float: left;
+    box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.2);
+    color: #324247;
+    background-color: #FFF; }
+    .sections__subSections--title {
+      padding: 30px 30px 1em 30px;
+      font-weight: bold;
+      font-size: 1.225em; }
+    .sections__subSections--summary {
+      text-align: left;
+      line-height: 2em;
+      padding: 0 30px 30px 30px; }
+  .sections__link {
+    font-size: 2.25em; }
+  .sections--articles::before {
+    content: " ";
+    display: block;
+    position: relative;
+    top: -15px;
+    height: 15px;
+    background-image: url("../assets/img/headerJaggedEdge.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain; }
+  .sections--metrages {
+    background-color: rgba(0, 221, 255, 0.2); }
+  .sections--tutos {
+    padding-bottom: 80px;
+    background-image: url(../assets/img/footerJaggedEdge.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+/* Sur Un Baobab
+ *
+ * /sass/components/_footer.scss - Esthetic style for footer
+ *
+ * coded by Mucht!
+ */
+.footer {
+  background-color: #324247;
+  padding: 5em 0 2em;
+  font-size: 10px; }
+  .footer__rows:first-child {
+    margin-bottom: 2em; }
+    .footer__rows:first-child .footerSections {
+      width: 294px;
+      float: left; }
+  .footer__rows--under {
+    vertical-align: bottom; }
+  .footer__copy {
+    padding-top: 30px;
+    display: block;
+    text-align: center;
+    color: #7899a1; }
+
+.footerSections:nth-child(n+2) {
+  margin-left: 29px; }
+
+.footerSections__title {
+  color: #FFF;
+  font-size: 3.6em;
+  padding-bottom: 0.7em; }
+
+.footerSections__elem {
+  display: block;
+  font-size: 1.6em;
+  font-weight: 600;
+  padding: 0 0 1em 0; }
+  .footerSections__elem--subElem {
+    padding-left: 1.5em; }
+
+.footerSections__ligne {
+  font-size: 1.18em;
+  padding: 0 0 1em 0;
+  color: #FFF; }
+  .footerSections__ligne strong {
+    font-weight: bold; }
+
+.footerSections__link {
+  font-size: 5.4em; }
+
+.footerSections--socialMedia {
+  width: 500px;
+  clear: both;
+  display: inline-block; }
+
+.footerSections--don {
+  float: right;
+  position: relative;
+  bottom: 2.7em; }
+
+.footerSections__blocs {
+  margin-right: 20px;
+  display: inline-block;
+  font-family: "Glyphs";
+  font-size: 4.41em;
+  color: #00ddff; }
+
+/*# sourceMappingURL=styles.css.map */

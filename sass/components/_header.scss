@@ -1,0 +1,21 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_header.scss - Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+
+.header{
+    background-image: url( #{ $imgPath }cover.jpg );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__title{
+        background-image: url( #{ $imgPath }menuJaggedEdge.png );
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &__logo{
+    }
+}

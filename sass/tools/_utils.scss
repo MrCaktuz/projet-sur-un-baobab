@@ -1,0 +1,26 @@
+/* Sur Un Baobab
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Mucht
+ */
+
+.hidden {
+    display: none;
+}
+
+.clear::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+// html {
+//     background-image: url("#{$imgPath}grid.png");
+//     background-position: center;
+//     background-repeat: repeat-y;
+//     background-size: 940px;
+// }
+// body{
+//     opacity: .5;
+// }
