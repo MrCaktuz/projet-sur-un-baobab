@@ -1,0 +1,77 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_footer.scss - Esthetic style for footer
+ *
+ * coded by Mucht!
+ */
+
+.footer{
+    background-color: $footerBackground;
+    padding: 5em 0 2em;
+    font-size: 10px;
+    &__rows:first-child{
+        margin-bottom: 2em;
+        .footerSections{
+            width: 294px;
+            float: left;
+        }
+    }
+    &__rows--under{
+        vertical-align: bottom;
+    }
+    &__copy{
+        padding-top: 30px;
+        display: block;
+        text-align: center;
+        color: $copyColor;
+    }
+}
+
+.footerSections:nth-child(n+2){
+    margin-left: 29px;
+}
+
+.footerSections{
+    &__title{
+        color: $footerColor;
+        font-size: $s19/10*1em;
+        padding-bottom: 0.7em;
+    }
+    &__elem{
+        display: block;
+        font-size: $s11/10*1em;
+        font-weight: 600;
+        padding: 0 0 1em 0;
+        &--subElem{
+            padding-left: 1.5em;
+        }
+    }
+    &__ligne{
+        font-size: $s8/10*1em;
+        padding: 0 0 1em 0;
+        color: $footerColor;
+        strong{
+            font-weight: bold;
+        }
+    }
+    &__link{
+        font-size: $s23/10*1em;
+    }
+    &--socialMedia{
+        width: 500px;
+        clear: both;
+        display: inline-block;
+    }
+    &--don{
+        float: right;
+        position: relative;
+        bottom: 2.7em;
+    }
+    &__blocs{
+        margin-right: 20px;
+        display: inline-block;
+        font-family: $glyphs;
+        font-size: $s21/10*1em;
+        color: $socialMediaColor;
+    }
+}

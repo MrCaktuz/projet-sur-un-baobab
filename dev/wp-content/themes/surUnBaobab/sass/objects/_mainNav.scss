@@ -1,0 +1,20 @@
+/* Sun Un Baobab
+ *
+ * /sass/objects/_mainNav.scss - Non Esthetic style for navigation
+ *
+ * coded by Mucht!
+ */
+
+.mainNav{
+    min-height: 55px;
+    &__list{
+        margin-left: $mainMargeLeft;
+        &--dropdown{
+        }
+    }
+    &__elem{
+        margin-right: $menuSpace;
+        &--subElem{
+        }
+    }
+}
