@@ -5,4 +5,5 @@ dev/*
 dev/wp-content/*
 !dev/wp-content/themes/
 dev/wp-content/themes/*
+!dev_wp-content/themes/surUnBaobab/
 !dev_wp-content/themes/firstTheme/
