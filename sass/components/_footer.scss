@@ -50,14 +50,20 @@
         &--subElem{
             padding-left: 1.5em;
         }
+        &:hover{
+            color: $footerColor;
+        }
     }
     &__ligne{
-        font-size: $s8/10*1em;
+        font-size: 1.6em;
         padding: 0 0 1em 0;
         color: $footerColor;
-        strong{
+        &--label{
             font-weight: bold;
         }
+    }
+    &__mailto:hover{
+        color: $footerColor;
     }
     &__link{
         font-size: $s23/10*1em;
@@ -65,6 +71,9 @@
     &--socialMedia{
         clear: both;
         display: inline-block;
+        & a {
+            display: inline-block;
+        }
     }
     &--don{
         float: right;
@@ -76,5 +85,8 @@
         font-family: $glyphs;
         font-size: $s21/10*1em;
         color: $socialMediaColor;
+        &:hover{
+            color: $linkColor;
+        }
     }
 }

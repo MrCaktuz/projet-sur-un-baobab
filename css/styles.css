@@ -219,7 +219,9 @@ html {
 .header {
   height: 300px; }
   .header__logo {
-    margin: 50px 0 0 10.5263157895%; }
+    width: 250px;
+    height: auto;
+    margin: 25px 0 0 10.5263157895%; }
 
 /* Sun Un Baobab
  *
@@ -654,13 +656,18 @@ a.button {
   padding: 0 0 1em 0; }
   .footerSections__elem--subElem {
     padding-left: 1.5em; }
+  .footerSections__elem:hover {
+    color: #FFF; }
 
 .footerSections__ligne {
-  font-size: 1.18em;
+  font-size: 1.6em;
   padding: 0 0 1em 0;
   color: #FFF; }
-  .footerSections__ligne strong {
+  .footerSections__ligne--label {
     font-weight: bold; }
+
+.footerSections__mailto:hover {
+  color: #FFF; }
 
 .footerSections__link {
   font-size: 5.4em; }
@@ -668,6 +675,8 @@ a.button {
 .footerSections--socialMedia {
   clear: both;
   display: inline-block; }
+  .footerSections--socialMedia a {
+    display: inline-block; }
 
 .footerSections--don {
   float: right;
@@ -679,6 +688,8 @@ a.button {
   font-family: "Glyphs";
   font-size: 4.41em;
   color: #00ddff; }
+  .footerSections__blocs:hover {
+    color: #ffa100; }
 
 /* Sur Un Baobab
  *
@@ -889,8 +900,6 @@ a.button {
   line-height: 2em; }
 
 .metrage__illu {
-  width: 34.521880065%;
-  margin: 10px 0 0 28px;
   float: right; }
 
 .metrage__photos {
@@ -911,7 +920,6 @@ a.button {
     background-color: rgba(0, 221, 255, 0.2); }
 
 .metrage__tableHead {
-  width: 39.384116694%;
   font-weight: bold;
   padding: 1em 0 1em 1em; }
 
