@@ -1,0 +1,81 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_metrage.scss - Esthetic style for section metrage
+ *
+ * coded by Mucht!
+ */
+
+.metrage{
+    &:nth-child(2n+1){
+        background-color: $sectionBackground;
+    }
+    &__headers{
+        position: relative;
+        overflow: hidden;
+    }
+    &__titles{
+        padding: 25px 0;
+        background-color: $articlesTitleBackground;
+        font: 3em $goodDog;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+    }
+    &__title{
+        font-family: $goodDog;
+        font-size: $s21/16*1em;
+        text-align: center;
+    }
+    &__subTitle{
+        font: 1.5em $openSansStack;
+        font-weight: bold;
+        padding: 1em 0 0.5em;
+        &:first-child{
+            padding-top: 0;
+        }
+    }
+    &__textBlocs{
+        columns: 2;
+        column-gap: 28px;
+        -webkit-columns: 2;
+        -webkit-column-gap: 28px;
+        -moz-columns: 2;
+        -moz-column-gap: 28px;
+    }
+    &__textBloc{
+        line-height: 2em;
+    }
+    &__illu{
+        width: 34.521880065%;
+        margin: 10px 0 0 28px;
+        float: right;
+    }
+    &__photos{
+        float: left;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px 0 rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+    &__movie{
+        box-shadow: 0px 0px 3px 0 rgba(0,0,0,0.2);
+    }
+
+    // Table
+    &__table{
+        font-size: 1em;
+    }
+    &__tableRow{
+        border-top: 1px solid $defaultColor;
+        &:nth-child(2n){
+            background-color: $sectionBackground;
+        }
+    }
+    &__tableHead{
+        width: 39.384116694%;
+        font-weight: bold;
+        padding: 1em 0 1em 1em;
+    }
+    &__tableData{
+        padding: 0.5em 0;
+    }
+}

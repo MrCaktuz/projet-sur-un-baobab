@@ -1,0 +1,51 @@
+/* Curriculom Vitae
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Mucht
+ * started at 17/02/2016
+ */
+
+// 1. Settings - Variables globales
+@import "settings/paths";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/sizes";
+
+// 2. Tools - Mixins globaux, functions & outils
+@import "tools/utils";
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+@import "generic/box-sizing";
+
+// 4. Base - Éléments bruts
+@import "base/root";
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+@import "objects/global";
+@import "objects/mainNav";
+@import "objects/sideNav";
+@import "objects/header";
+@import "objects/sections";
+@import "objects/footer";
+@import "objects/archives";
+@import "objects/propos";
+@import "objects/contact";
+@import "objects/article";
+@import "objects/metrage";
+
+// 6. Components - Design des composants, morceaux d'UI
+@import "components/global";
+@import "components/mainNav";
+@import "components/sideNav";
+@import "components/header";
+@import "components/sections";
+@import "components/footer";
+@import "components/archives";
+@import "components/propos";
+@import "components/contact";
+@import "components/article";
+@import "components/metrage";
+
+// 7. Trumps - Styles spécifiques à un élément

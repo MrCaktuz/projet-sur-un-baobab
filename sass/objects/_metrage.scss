@@ -1,0 +1,60 @@
+/* Sur Un Baobab
+ *
+ * /sass/objects/_metrage.scss - Non Esthetic style for page metrage
+ *
+ * coded by Mucht!
+ */
+
+.metrage{
+    &:nth-child(2n+1){
+    }
+    &__headers{
+        height: 200px;
+        margin-bottom: 25px;
+    }
+    &__titles{
+        width: 100%;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__title{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__subTitle{
+        width: 100%;
+    }
+    &__textBloc{
+        width: 100%;
+        & + &{
+            margin-top: 25px;
+        }
+    }
+    &__illu{
+        width: 34.521880065%;
+        margin: 10px 0 0 28px;
+    }
+    &__galerie{
+        margin-top: 25px;
+    }
+    &__photos{
+        width: 47.649918963%;
+        height: 196px;
+        &:nth-child(2n+1){
+            margin: 0 0 29px 29px;
+        }
+    }
+    &__photo{
+        width: 100%;
+        height: auto;
+    }
+    &__movie{
+        width: 100%;
+    }
+
+    // table
+    &__tableHead{
+        width: 39.384116694%;
+    }
+}

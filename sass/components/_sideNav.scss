@@ -1,0 +1,30 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_sideNav.scss - Esthetic style for secondary navigation
+ *
+ * coded by Mucht!
+ */
+
+
+.sideNav{
+    padding: 15px 0 25px 28px;
+    float: right;
+    border-left: 2px solid $defaultColor;
+    &__titles{
+        font: 2em $goodDog;
+        padding-bottom: 25px;
+    }
+    &__listElts + &__listElts{
+        padding-top: 1em;
+    }
+    &__links{
+        color: $defaultColor;
+        transition: 0.1s ease-in;
+        text-decoration: none;
+    }
+    &--sticky{
+        position: sticky;
+        top: 105px;
+        padding-bottom: 15px;
+    }
+}

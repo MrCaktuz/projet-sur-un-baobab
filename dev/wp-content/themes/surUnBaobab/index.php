@@ -6,7 +6,7 @@ get_header(); // function de wordpress qui va rechercher le fichier header.php q
 ?>
     <section class="sections sections--articles clear">
         <div class="wrap">
-            <h2 class="sections__title">Nos sections</h2>
+            <h2 class="sections__title">Nos articles</h2>
             <?php
                 $posts = new WP_QUERY( [ 'posts_per_page' => 2 ] );
                 if ( $posts -> have_posts() ): while ( $posts -> have_posts() ): $posts -> the_post();

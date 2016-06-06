@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/styles.css" media="screen" title="no title" charset="utf-8">
+        <title>Titre du court-métrage - Sur Un Baobab</title>
+    </head>
+    <body>
+        <nav class="mainNav">
+            <h2 class="hidden">Main navigation menu</h2>
+            <ul class="mainNav__list">
+                <li class="mainNav__elem">
+                    <a class="links mainNav__link" href="./index.html">Accueil</a>
+                </li>
+                <li class="mainNav__elem">
+                    <a class="links mainNav__link" href="./articles.html">Articles</a>
+                </li>
+                <li class="mainNav__elem mainNav__elem--hasDropdown">
+                    <a class="links mainNav__link mainNav__elem--hasDropdownHead" href="./aPropos.html">&Agrave; propos</a>
+                    <ul class="mainNav__list mainNav__list--isDropdown">
+                        <li class="mainNav__elem mainNav__elem--subElem">
+                            <a class="subLinks mainNav__link mainNav__elem--subLink" href="./aPropos.html#project">Notre projet</a>
+                        </li>
+                        <li class="mainNav__elem mainNav__elem--subElem">
+                            <a class="subLinks mainNav__link" href="./aPropos.html#us">Qui sommes nous</a>
+                        </li>
+                        <li class="mainNav__elem mainNav__elem--subElem">
+                            <a class="subLinks mainNav__link" href="./aPropos.html#pictures">Galerie photo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainNav__elem mainNav__elem--active">
+                    <a class="links mainNav__link" href="./metrages.html">Cours-métrages</a>
+                </li>
+                <li class="mainNav__elem">
+                    <a class="links mainNav__link" href="./tutos.html">Anime toi-même</a>
+                </li>
+                <li class="mainNav__elem">
+                    <a class="links mainNav__link" href="./contact.html">Contact</a>
+                </li>
+                <li class="mainNav__elem mainNav__elem--donation">
+                    <a class="links mainNav__link button" href="./donation.html">Faire un don</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__title">
+                <h1 class="hidden">Titre du court-métrage</h1>
+                <img class="header__logo" src="./assets/img/logo.png" alt="Sur Un Baobab - Animation workshop" width="200" height="200"/>
+            </div>
+        </header>
+
+        <div>
+            <aside class="sideNav sideNav--sticky">
+                <h2 class="sideNav__titles hidden">Navigation secondaire</h2>
+                <ol class="sideNav__list">
+                    <li class="sideNav__listElts">
+                        <a href="#movie" class="sideNav__links sideNav__titles links">Le film</a>
+                    </li>
+                    <li class="sideNav__listElts">
+                        <a href="#project" class="sideNav__links sideNav__titles links">Le projet</a>
+                    </li>
+                    <li class="sideNav__listElts">
+                        <a href="#makingof" class="sideNav__links sideNav__titles links">Making of</a>
+                    </li>
+                    <li class="sideNav__listElts">
+                        <a href="#tech" class="sideNav__links sideNav__titles links">Fiche technique</a>
+                    </li>
+                </ol>
+            </aside>
+
+            <section class="metrage">
+                <div class="bigWrap">
+                    <div class="wrap">
+                        <div class="metrage__headers">
+                            <img class="metrage__img" src="./assets/img/metrageOne.jpg" alt=""/>
+                            <h2 class="metrage__titles">Titre du court-métrage</h2>
+                        </div>
+                        <p class="metrage__textBloc">Courte introduction du courts-métrage. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metrage" id="movie">
+                <div class="bigWrap">
+                    <div class="wrap">
+                        <h2 class="metrage__title">Le film</h2>
+                        <iframe class="metrage__movie" width="854" height="480" src="https://www.youtube.com/embed/92IwfppA5SQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metrage" id="project">
+                <div class="bigWrap">
+                    <div class="wrap">
+                        <h2 class="metrage__title">Le projet</h2>
+                        <div class="metrage__textBlocs">
+                            <h3 class="metrage__subTitle">Safidin’i Pela: un projet proposé aux jeunes malgaches</h3>
+                            <p class="metrage__textBloc">Le court métrage « Safidin’i Pela » est le fruit d’un atelier cinéma d’animation qui s’est déroulé entre le mois de septembre et octobre 2015 à Tuléar, ville côtière du sud-ouest de Madagascar. L’atelier a été proposé aux bénéficiaires du Centre Art et Musique et du Foyer Social de l’ONG Bel Avenir, foyer dédié aux adolescentes en risque d’exclusion sociale et de grossesse précoce. Fin octobre, les 9 jeunes participant(e)s volontaires âgé(e)s de 11 à 19 ans présentent fièrement et en avant première leur création devant près de 200 spectateurs dans le vieux cinéma Le Tropic à Tuléar.</p>
+                            <h3 class="metrage__subTitle">La grossesse précoce</h3>
+                            <p class="metrage__textBloc">Selon le rapport 2011 « Les jeunes à Madagascar: faits et chiffres » de l’Unicef, 48,1% des jeunes filles entre 15 et 19 ans de la région de Atsimo-Andrefana, dont Tuléar est le chef-lieu, sont mères ou sont enceintes. En 2015, pour la même région et la même tranche d’âge, le Southern Africa Gender Protocol Alliance indique 56,2%. En d’autres termes, actuellement dans la région de Tuléar plus d’une adolescente sur deux tombe enceinte pour la première fois entre 15 et 19 ans et la situation à tendance à s’aggraver.</p>
+                            <p class="metrage__textBloc">Malheureusement les grossesses précoces contribuent (avec les grossesses tardives, rapprochées et multiples) pour beaucoup aux taux élevés de mortalité, de mortalité infantile et juvénile, en particulier dans les pays pauvres. Les grossesses des adolescentes sont à risques. Elles augmentent également les taux de mortalité maternelle. Enfin, être une jeune maman réduit fortement la possibilité pour les jeunes femmes de faire des études et de travailler. Ces grossesses précoces risquent de porter un préjudice durable à leur qualité de vie et à celle de leurs enfants. (Binet, Gastineau et Rakotoson, 2010 : 257-272)</p>
+                            <p class="metrage__textBloc">De cette constatation inquiétante est partie l’idée d’aborder la problématique de la grossesse précoce et plus particulièrement des relations entre adultes et jeunes filles car c’est une des causes courantes de grossesse précoce à Madagascar.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metrage clear" id="makingof">
+                <div class="bigWrap">
+                    <div class="wrap">
+                        <h2 class="metrage__title">Making of</h2>
+                        <div class="metrage__text">
+                            <h3 class="metrage__subTitle">Des déchets pour un décor</h3>
+                            <img class="metrage__illu" src="./assets/img/makingof1.jpg" alt="" />
+                            <p class="metrage__textBloc">Une des étapes de fabrication d’un petit film d’animation est la création du décors. Pour celui-ci, les enfants ont créé une maquette d’un paysage malgache en matériaux « recyclés » ! Pour cela ils ont utilisé des déchets et des éléments trouvés dans la rue, par exemple des boites de conserves, un vieux grillage, un peu d’argile, du sable, un reste de moustiquaire, des vieux journaux, etc. Et on a mangé un ananas pour utiliser ses feuilles dans la fabrication de minis cocotiers.</p>
+                            <h3 class="metrage__subTitle">Papiers découpés</h3>
+                            <img class="metrage__illu" src="./assets/img/makingof2.jpg" alt="" />
+                            <p class="metrage__textBloc">Les personnages et leurs accessoires sont imaginés en mélangeant les idées et les dessins de chacun des participants. Ils sont ensuite fabriqués avec du cartons, de la feutrine, des morceaux de tissus et des vieux papiers. Chaque personnage est composé de plusieurs petites parties qu’on peut déplacer et remplacer facilement pour permettre leur animation.</p>
+                            <h3 class="metrage__subTitle">Bruitages et dialogues</h3>
+                            <img class="metrage__illu" src="./assets/img/makingof3.jpg" alt="" />
+                            <p class="metrage__textBloc">C’est là que les participants de l’atelier prêtent leur voix aux personnages. En général, cette étape se fait avant l’animation. Après un petit échauffement pour faire passer l’appréhension et pour découvrir le matériel, les participants se familiarisent très vite avec le micro. Chaque dialogue est enregistré en vezo (dialecte malgache).</p>
+                            <h3 class="metrage__subTitle">L’anim !</h3>
+                            <img class="metrage__illu" src="./assets/img/makingof4.jpg" alt="" />
+                            <p class="metrage__textBloc">Pendant que certains donnent de leur voix, d’autres apprenti-animateurs donnent vie aux personnages en les déplaçant petit à petit, mora mora comme on dit ici… L’animation se fait en petites équipes tournantes, un se charge de faire la photo en utilisant l’ordinateur pendant que deux autres bougent les personnages et accessoires. Au bout de 12 photos, nous avons 1 seconde d’animation. Les personnages sont animés au-dessus d’un fond vert qu’on remplace ensuite par les décors. C’est la même technique utilisée pour les présentateurs météo. Cela permet entre autre de continuer à fabriquer le décors avec d’autres enfants pendant l’animation.</p>
+                        </div>
+                        <div class="metrage__galerie clear">
+                            <h3 class="metrage__subTitle">Galerie photos</h3>
+                            <a href="./assets/img/articlesOne.jpg" class="metrage__photos"><img src="./assets/img/articlesOne.jpg" alt="" class="metrage__photo"></a>
+                            <a href="./assets/img/articlesTwo.jpg" class="metrage__photos"><img src="./assets/img/articlesTwo.jpg" alt="" class="metrage__photo"></a>
+                            <a href="./assets/img/articlesThree.jpg" class="metrage__photos"><img src="./assets/img/articlesThree.jpg" alt="" class="metrage__photo"></a>
+                            <a href="./assets/img/metrageOne.jpg" class="metrage__photos"><img src="./assets/img/metrageOne.jpg" alt="" class="metrage__photo"></a>
+                            <a href="./assets/img/metrageTwo.jpg" class="metrage__photos"><img src="./assets/img/metrageTwo.jpg" alt="" class="metrage__photo"></a>
+                            <a href="./assets/img/metrageThree.jpg" class="metrage__photos"><img src="./assets/img/metrageThree.jpg" alt="" class="metrage__photo"></a>
+                            <a href="./assets/img/tutoOne.jpg" class="metrage__photos"><img src="./assets/img/tutoOne.jpg" alt="" class="metrage__photo"></a>
+                            <a href="./assets/img/tutoTwo.jpg" class="metrage__photos"><img src="./assets/img/tutoTwo.jpg" alt="" class="metrage__photo"></a>
+                            <a href="./assets/img/tutoThree.jpg" class="metrage__photos"><img src="./assets/img/tutoThree.jpg" alt="" class="metrage__photo"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metrage clear" id="tech">
+                <div class="bigWrap">
+                    <div class="wrap">
+                        <h2 class="metrage__title">Fiche technique</h2>
+                        <table class="metrage__table">
+                            <tbody>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Titre Français</p></th>
+                                    <td class="metrage__tableData"><p>Le Choix de Pela</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Durée</p></th>
+                                    <td class="metrage__tableData"><p>6min 17sec</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Durée</p></th>
+                                    <td class="metrage__tableData"><p>6min 17sec</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Pays</p></th>
+                                    <td class="metrage__tableData"><p>Madagascar</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Année</p></th>
+                                    <td class="metrage__tableData"><p>2015</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Techniques</p></th>
+                                    <td class="metrage__tableData"><p>2D, papier-découpé, image par image, déchets recyclés</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Thème</p></th>
+                                    <td class="metrage__tableData"><p>La grossesse précoce</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Participants</p></th>
+                                    <td class="metrage__tableData"><p>9 enfants et adolescents de Tuléar bénéficiaires du Centre Art et Musique et du Foyer Social de l’ONG Bel Avenir</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Direction et coordination</p></th>
+                                    <td class="metrage__tableData"><p>Elena CABEDO GARCIA & François CHENOT</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Assistants</p></th>
+                                    <td class="metrage__tableData"><p>Henrmine ANDRY, Virginie Olivia ANDRIAMPENOSOA & Razandry M. LAFINIARIVO</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Histoire originale</p></th>
+                                    <td class="metrage__tableData"><p>Emma LIDON & Josué AHIAVAO</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Scénario</p></th>
+                                    <td class="metrage__tableData"><p>Elena CABEDO GARCIA & François CHENOT</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Musique</p></th>
+                                    <td class="metrage__tableData"><p>MIBEKO</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Montage son</p></th>
+                                    <td class="metrage__tableData"><p>Elena CABEDO GARCIA</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Montage image</p></th>
+                                    <td class="metrage__tableData"><p>François CHENOT</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Production</p></th>
+                                    <td class="metrage__tableData"><p>Sur Un Baobab</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Langue</p></th>
+                                    <td class="metrage__tableData"><p>Vezo (dialecte malagache)</p></td>
+                                </tr>
+                                <tr class="metrage__tableRow">
+                                    <td class="metrage__tableHead"><p>Sous-titres disponibles</p></th>
+                                    <td class="metrage__tableData"><p>ES / FR / EN / MG / CAT / IT</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer clear">
+            <div class="bigWrap">
+                <div class="footer__rows clear">
+                    <nav class="footerSections footerSections--siteMap">
+                        <h2 class="footerSections__title hidden">Navigation secondaire</h2>
+                        <ul class="footerSections__list">
+                            <li><a class="footerSections__elem footerLinks" href="#">Actualités</a></li>
+                            <li><a class="footerSections__elem footerLinks" href="#">&Agrave; propos</a></li>
+                            <li><a class="footerSections__elem footerLinks" href="#">Courts-métrages</a></li>
+                            <li><a class="footerSections__elem footerLinks" href="#">Anime toi-même</a></li>
+                            <li><a class="footerSections__elem footerLinks" href="#">Nous soutenir</a></li>
+                            <li><a class="footerSections__elem footerLinks" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <section class="footerSections footerSections--news">
+                        <h2 class="footerSections__title">Actu récente</h2>
+                        <ul class="footerSections__list">
+                            <li class="footerSections__elem">
+                                <a class="footerLinks" href="#">Safidin'i Pela</a>
+                            </li>
+                            <li class="footerSections__elem">
+                                <a class="footerLinks" href="#">Tongasoa et le vazaha</a>
+                            </li>
+                            <li class="footerSections__elem">
+                                <a class="footerLinks" href="#">Titre actu 3</a>
+                            </li>
+                            <li class="footerSections__elem">
+                                <a class="footerLinks" href="#">Titre actu 4</a>
+                            </li>
+                            <li class="footerSections__elem">
+                                <a class="footerLinks" href="#">Titre actu 5</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footerSections footerSections--contact">
+                        <h2 class="footerSections__title">Contact</h2>
+                        <p class="footerSections__ligne"><strong>surunbaobab@gmail.com</strong></p>
+                        <p class="footerSections__ligne"><strong>WhatsApp&nbsp;: </strong>+32 495 34 89 66</p>
+                        <p class="footerSections__ligne"><strong>Tel. Belgique&nbsp;: </strong>+32 497 36 39 75</p>
+                        <p class="footerSections__ligne"><strong>Elena Cabedo Garcia&nbsp;: </strong>elenakabedo@hotmail.com</p>
+                        <p class="footerSections__ligne"><strong>François Chenot&nbsp;: </strong>francois.chenot@gmail.com</p>
+                    </section>
+                </div>
+                <div class="footer__rows footer__rows--under clear">
+                    <section class="footerSections footerSections--socialMedia">
+                        <h2 class="footerSections__title hidden">Suivez nous!</h2>
+                        <p class="footerSections__blocs footerSections__blocs--facebook"></p>
+                        <p class="footerSections__blocs footerSections__blocs--feed"></p>
+                        <p class="footerSections__blocs footerSections__blocs--youtube"></p>
+                        <p class="footerSections__blocs footerSections__blocs--mail"></p>
+                        <p class="footerSections__blocs footerSections__blocs--vimeo"></p>
+                        <p class="footerSections__blocs footerSections__blocs--twitter"></p>
+                    </section>
+                    <section class="footerSections footerSections--don">
+                        <h2 class="footerSections__link"><a class="button" href="#">Faire un don</a></h2>
+                    </section>
+                </div>
+                <small class="footer__copy">&copy; Designed by Mucht</small>
+            </div>
+        </footer>
+    </body>
+</html>

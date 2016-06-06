@@ -1,0 +1,124 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_mainNav.scss - Esthetic style for navigation
+ *
+ * coded by Mucht!
+ */
+
+.mainNav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: $navBackground;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        height: 15px;
+        width: 100%;
+        background-image: url( "#{ $imgPath }menuJaggedEdge.png" );
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    }
+    // ul - ol
+    &__list{
+        &--isDropdown{
+            position: absolute;
+            width: 7.5em;
+            z-index: 2000;
+            left: -1.5em;
+            top: 2.2em;
+            display: none;
+            padding: 1em;
+            background: $buttonBackground;
+            border-radius: .5rem;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: -0.75em;
+                left: 1em;
+                border: .6rem solid transparent;
+                border-bottom-color: $buttonBackground;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                top: -1em;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+    }
+    // li
+    &__elem{
+        display: inline-block;
+        font-size: $s15 * 1px;
+        font-family: $goodDog;
+        & + &{
+            padding-top: 1em/$s15*15;
+        }
+        &--subElem{
+            display: block;
+        }
+        &--hasDropdown{
+            position: relative;
+            &::before {
+                content: "v";
+                color: $defaultColor;
+                margin-right: .25rem;
+                font: normal 1em $goodDog;
+            }
+            &:hover {
+                .mainNav__list--isDropdown {
+                    display: block;
+                }
+            }
+        }
+        &--active::after{
+            content: " ";
+            display: block;
+            width: 50px;
+            margin: 2px auto;
+            height: 5px;
+            background-image: url(#{ $imgPath }active.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &--donation{
+            float: right;
+            margin-right: 100%/30;
+        }
+    }
+    // links elements
+    &__link{
+        color: $defaultColor;
+    }
+}
+
+.links, .footerLinks, .subLinks{
+    transition: 0.1s ease-in;
+}
+
+.links:hover{
+    color: $linksHoverColor;
+}
+
+.subLinks:hover{
+    color: #FFF;
+}
+
+.footerLinks:hover{
+    color: $footerLinksHoverColor;
+}
+
+.button:hover{
+    color: $defaultColor;
+}

@@ -1,0 +1,83 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_contact.scss - Esthetic style for section contact
+ *
+ * coded by Mucht!
+ */
+
+.contacts{
+    &:nth-child(2n+1){
+        background-color: $sectionBackground;
+    }
+    &__title{
+        font-family: $goodDog;
+        font-size: $s21/16*1em;
+        text-align: center;
+    }
+    &__subTitle{
+        font: 2em $goodDog;
+        padding-bottom: 0.5em;
+    }
+    &__textBlocs{
+    }
+    &__textBloc{
+        line-height: 2em;
+    }
+    &__photos{
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px 0 rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+    &__elts{
+        text-align: center;
+        &--label{
+            font-weight: bold;
+        }
+    }
+    &__mailto{
+        color: $defaultColor;
+        transition: 0.1s ease-in;
+        &:hover{
+            color: $linksHoverColor;
+        }
+    }
+
+    // form
+    &__form{
+
+    }
+    &__fieldset{
+        position: relative;
+        padding: 0.5em;
+        border-bottom: 1px solid $defaultColor;
+        &--submit{
+            border-bottom: none;
+            padding-top: 25px;
+            text-align: center;
+        }
+    }
+    &__label{
+        font-family: $goodDog;
+        font-size: 2em;
+        margin-right: 1em;
+    }
+    &__input{
+        font-size: 1em;
+        font-family: $openSansStack;
+        background-color: transparent;
+        border: none;
+    }
+    &__textarea{
+    }
+    &__submit{
+        border: none;
+        font-size: 2em;
+        background-color: $buttonBackground;
+        border-radius: 0.3em;
+        color: #fff;
+        font-family: "GoodDog";
+        padding: 0.2em 0.5em;
+        transition: all 0.1s ease-in 0s;
+    }
+}

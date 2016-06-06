@@ -1,0 +1,17 @@
+/* Sun Un Baobab
+ *
+ * /sass/objects/_article.scss - Non Esthetic style for article
+ *
+ * coded by Mucht!
+ */
+
+.article{
+    width: 100%;
+    &__titles{
+        width: 100%;
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+}

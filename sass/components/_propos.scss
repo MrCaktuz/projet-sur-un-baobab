@@ -1,0 +1,38 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_propos.scss - Esthetic style for section propos
+ *
+ * coded by Mucht!
+ */
+
+.propos{
+    &:nth-child(2n+1){
+        background-color: $sectionBackground;
+    }
+    &__title{
+        font-family: $goodDog;
+        font-size: $s21/16*1em;
+        text-align: center;
+    }
+    &__subTitle{
+        font: 2em $goodDog;
+        padding-bottom: 0.5em;
+    }
+    &__textBlocs{
+        columns: 2;
+        column-gap: 28px;
+        -webkit-columns: 2;
+        -webkit-column-gap: 28px;
+        -moz-columns: 2;
+        -moz-column-gap: 28px;
+    }
+    &__textBloc{
+        line-height: 2em;
+    }
+    &__photos{
+        float: left;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px 0 rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+}

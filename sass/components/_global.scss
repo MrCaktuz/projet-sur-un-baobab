@@ -1,0 +1,19 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_global.scss - Esthetic style for global elements
+ *
+ * coded by Mucht!
+ */
+ a{
+     text-decoration: none;
+     color: $linkColor;
+ }
+
+a.button{
+    font-family: $goodDog;
+    color: $buttonColor;
+    padding: 0.2em 0.5em;
+    background-color: $buttonBackground;
+    border-radius: 0.3em;
+    transition: 0.1s ease-in;
+}

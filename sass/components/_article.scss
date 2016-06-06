@@ -1,0 +1,43 @@
+/* Sur Un Baobab
+ *
+ * /sass/components/_article.scss - Esthetic style for section article
+ *
+ * coded by Mucht!
+ */
+
+.article{
+    padding-top: 50px;
+    display: block;
+    color: $defaultColor;
+    &__headers{
+        position: relative;
+    }
+    &__titles{
+        padding: 25px 0;
+        background-color: $articlesTitleBackground;
+        font: 3em $goodDog;
+        text-align: center;
+        position: absolute;
+        bottom: 1px;
+    }
+    &__subTitle{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+    &__textBlocs{
+        padding: 30px;
+        padding-bottom: 0;
+        columns: 2;
+        column-gap: 28px;
+        -moz-columns: 2;
+        -moz-column-gap: 28px;
+        -webkit-columns: 2;
+        -webkit-column-gap: 28px;
+    }
+    &__textBloc{
+        text-align: left;
+        line-height: 2em;
+        padding-bottom: 25px;
+    }
+}
