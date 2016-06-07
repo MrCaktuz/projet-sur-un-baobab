@@ -23,8 +23,11 @@
         text-decoration: none;
     }
     &--sticky{
+        position: fixed;
         position: sticky;
-        top: 105px;
+        top: 115px;
+        right: 0;
+        z-index: 500;
         padding-bottom: 15px;
     }
 }

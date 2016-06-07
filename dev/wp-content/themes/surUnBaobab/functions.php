@@ -6,11 +6,11 @@
 
 add_theme_support( 'post-thumbnails' );
  // register_post_type( $post_type, $args );
-register_post_type( 'projet', [
+register_post_type( 'metrage', [
     'label' => 'Courts-métrages',
     'labels' => [
             'singular_name' => 'Court-métrage',
-            'add_new' => 'Ajouter un nouveau projet'
+            'add_new' => 'Ajouter un nouveau Court-métrage'
         ],
     'description' => 'La liste de tous les projets (courts-métrages, ateliers,...)affichés sur le site.',
     'public' => true,
@@ -23,7 +23,7 @@ register_post_type( 'projet', [
 register_post_type( 'tuto', [
     'label' => 'Tutorials',
     'labels' => [
-            'singular_name' => 'Tutorial',
+            'singular_name' => 'Tutoriel',
             'add_new' => 'Ajouter un nouveau tuto'
         ],
     'description' => 'La liste de tous les tuto affichés sur le site.',
@@ -31,6 +31,20 @@ register_post_type( 'tuto', [
     'menu_position' => 6,
     'menu_icon' => 'dashicons-video-alt3',
     'supports' => [ 'title', 'editor', 'thumbnail' ],
+    'has_archive' => true
+    ] );
+
+register_post_type( 'about', [
+    'label' => 'about',
+    'labels' => [
+            'singular_name' => 'about',
+            'add_new' => 'Ajouter un nouveau'
+        ],
+    'description' => 'contenu de présentation du collectif',
+    'public' => true,
+    'menu_position' => 7,
+    'menu_icon' => 'dashicons-admin-site',
+    'supports' => [ 'title', 'editor', 'thumbnail', 'category' ],
     'has_archive' => true
     ] );
 
@@ -42,9 +56,23 @@ register_post_type( 'admins', [
         ],
     'description' => 'La liste de tous les admins affichés sur le site.',
     'public' => true,
-    'menu_position' => 7,
+    'menu_position' => 8,
     'menu_icon' => 'dashicons-admin-users',
     'supports' => [ 'title', 'editor', 'thumbnail' ],
+    'has_archive' => true
+    ] );
+
+register_post_type( 'Forms', [
+    'label' => 'Forms',
+    'labels' => [
+            'singular_name' => 'Form',
+            'add_new' => 'Ajouter un nouveau formulaire'
+        ],
+    'description' => 'liste de formulaire présent sur le site',
+    'public' => true,
+    'menu_position' => 9,
+    'menu_icon' => 'dashicons-list-view',
+    'supports' => [ 'title', 'editor' ],
     'has_archive' => true
     ] );
 
@@ -53,7 +81,7 @@ register_post_type( 'admins', [
  *
  */
 
-function get_the_custom_excerpt( $length = 150 ) {
+function get_the_custom_excerpt( $length = 140 ) {
 
     $excerpt = get_the_content();
     $excerpt = strip_shortcodes( $excerpt );
@@ -63,7 +91,7 @@ function get_the_custom_excerpt( $length = 150 ) {
 
 }
 
-function the_custom_excerpt( $length = 135 ) {
+function the_custom_excerpt( $length = 140 ) {
     echo get_the_custom_excerpt( $length );
 }
 

@@ -61,16 +61,20 @@
         font-family: $goodDog;
         font-size: 2em;
         margin-right: 1em;
+        &--msg{
+            position: relative;
+            top: -106px;
+        }
     }
-    &__input{
+    input[ type="text" ], input[ type="email" ], textarea {
         font-size: 1em;
         font-family: $openSansStack;
         background-color: transparent;
         border: none;
     }
-    &__textarea{
+    textarea{
     }
-    &__submit{
+    input[ type="submit" ] {
         border: none;
         font-size: 2em;
         background-color: $buttonBackground;

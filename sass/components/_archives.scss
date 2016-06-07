@@ -9,6 +9,11 @@
     display: block;
     color: $defaultColor;
     box-shadow: 0px 0px 3px 0 rgba(0,0,0,0.2);
+    &__title{
+        font-family: $goodDog;
+        font-size: $s21/16*1em;
+        text-align: center;
+    }
     &__headers{
         position: relative;
     }

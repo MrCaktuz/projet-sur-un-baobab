@@ -31,7 +31,9 @@
     &__form{
 
     }
-    &__textarea{
+    textarea {
+        width: 450px;
+        height: 125px;
         margin-top: 0.5em;
     }
 }
